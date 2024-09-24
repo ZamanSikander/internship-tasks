@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body{
-        background: radial-gradient(at right top, rgb(56, 189, 248), rgb(49, 46, 129));
-    }
+/* body {
+  background: radial-gradient(
+    at right top,
+    rgb(56, 189, 248),
+    rgb(49, 46, 129)
+  );
+} */
+
+body{
+    @apply bg-gray-100
 }

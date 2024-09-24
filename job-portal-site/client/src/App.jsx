@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import JobCard from "./components/JobCard";
+import Footer from "./components/Footer";
 // import JobData from "./JobDummyData";
 import { useEffect, useState } from "react";
 import { collection, query, orderBy, getDocs, where } from "firebase/firestore";
@@ -53,7 +54,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <div >
       <Navbar />
       <Header />
       <SearchBar fetchJobsCustom={fetchJobsCustom}/>
@@ -64,6 +65,7 @@ const App = () => {
       {jobs.map((job) => (
         <JobCard key={job.id} {...job} />
       ))}
+      <Footer/>
     </div>
   );
 };
