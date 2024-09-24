@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB29JfzynDz8dwwhShzHPW4OUw6G4qbg04",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "online-job-portal-60d80.firebaseapp.com",
   projectId: "online-job-portal-60d80",
   storageBucket: "online-job-portal-60d80.appspot.com",
