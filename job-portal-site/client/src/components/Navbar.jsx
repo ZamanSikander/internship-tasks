@@ -17,7 +17,7 @@ const Navbar = () => {
       </button>
     </div>
     {/* Mobile Menu */}
-    <div id="mobileMenu" className="absolute top-20 right-0 bg-gray-900 p-4 rounded-md hidden sm:hidden flex flex-col items-center space-y-2">
+    <div id="mobileMenu" className="absolute top-20 right-0 bg-gray-900 p-4 rounded-md sm:hidden flex flex-col items-center space-y-2">
       <button type="button" className="bg-gray-700 hover:bg-gray-600 p-2 w-full text-center rounded-md text-white">Login</button>
       <button type="button" className="bg-blue-700 hover:bg-blue-600 p-2 w-full text-center rounded-md text-white">SignUp</button>
     </div>
